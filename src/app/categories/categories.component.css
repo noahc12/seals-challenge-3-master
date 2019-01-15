@@ -1,0 +1,36 @@
+.background{
+    background-image: linear-gradient(to right, rgba(104, 212, 255, 0.5), rgba(38, 64, 139,1));
+    width:100vw;
+    min-height: 100vh;
+}
+.genre-link{
+    /* padding: 45px;
+    min-width:100vw; */
+    float: left;
+  width: 33.33%;
+  padding: 10px;
+  padding-left: 50px;
+    
+}
+.genre-button{
+    content: "";
+  clear: both;
+  display: table;
+}
+.show-link{
+    color: #26408B
+}
+.show-button{
+    border: solid thin #26408B;
+    border-radius: 10px;
+    font-family: geneva;
+    background-color: white;
+    transition: all ease-in 300ms;
+}
+
+.show-button:hover{
+    color: #26408B;
+    border: solid thin #26408B;
+    background-color: white;
+    font-size:150%;
+}

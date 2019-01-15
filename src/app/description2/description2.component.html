@@ -1,0 +1,32 @@
+<div class="bg">
+    <!-- <div class="img-container">
+      <img src="{{descriptionpic}}" alt="" (mouseover)="startpreview()" (mouseout)="changegif()">
+  </div> -->
+    <div class="img-container" *ngIf='show == false'>
+      <img src="{{selectedShow.url}}" (mouseover)="startpreview()" (mouseout)="changegif()" style="border-radius: 40px; width: 300px; height: 400px">
+    </div>
+    <div class="gif" *ngIf='show == true'>
+      <img src="{{selectedShow.gif}}" (mouseover)="startpreview()" (mouseout)="changegif()" style="border-radius: 40px;">
+    </div>
+    <div class="backgroundblue">
+    <div class="description">
+      <h2 style="text-decoration-line: underline; padding-bottom:20px; ">
+        {{selectedShow.name}} 
+      </h2>
+      <h5>
+        {{selectedShow.des}}
+      </h5>
+    </div>
+    <div class="rating">
+      rating:
+  
+      <i class="fas fa-star yellow" *ngFor="let item of selectedShow.rating"></i>
+      <i class="fas fa-star" *ngFor="let item of selectedShow.ratingL"></i>
+  
+    </div>
+    <div class="watch">
+      <a class="btn custom" [attr.href]="selectedShow.dub" target="_blank">Watch Dub</a>
+      <a class="btn custom" [attr.href]="selectedShow.sub" target="_blank">Watch Sub</a>
+    </div>
+  </div>
+  </div>

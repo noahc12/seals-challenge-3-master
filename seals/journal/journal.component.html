@@ -1,0 +1,28 @@
+<div id="background">
+  <div id="padding">
+    <div *ngFor="let blog of blogs">
+      <div class="blog-link" (click)="viewBlog(blog._id)">
+        {{blog.title}}
+      </div>
+    </div>
+
+    <div>
+      <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        <div>
+          <input type="text" formControlName="title" placeholder="title">
+        </div>
+        <div>
+          <input type="text" formControlName="content" placeholder="content">
+        </div>
+        <div>
+          <button type="submit">
+            <span *ngIf="!submitted">Submit Journal</span>
+            <span *ngIf="submitted"> <i class="fas fa-spinner fa-spin"></i></span>
+
+          </button>
+        </div>
+        <div *ngIf="!valid" id="err">Please fill in all form fields</div>
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,19 @@
+<div class="background-color">
+    <div class="row" *ngFor="let item of anime">
+        <div class="col-2">
+            <div class="img-anime">
+                <img [src]="item.url" alt="">
+            </div>
+        </div>
+        <div class="col-10">
+            <div class="desc">
+                <h1 class="text">{{item.name}}</h1>
+                <p class="text">{{item.des}}</p>
+                <button type="button" class="btn custom" (click)="router.navigate(['/list']);">Click for animes like {{item.name}}</button>
+            </div>
+            <!--<div class="bottom">
+                <img id="blue" src="assets/topShows/bluebottom.png">
+              </div> -->
+        </div>
+    </div>
+</div>

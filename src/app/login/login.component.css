@@ -1,0 +1,43 @@
+.background-color{
+    background-image: linear-gradient(to right, rgba(137, 53, 139, 0.5), rgba(38, 64, 139,1));
+    width:100vw;
+    min-height: 100vh;
+}
+.background{
+    padding-left: 15px;
+}
+h2{
+    font-family: geneva;
+    color: white;
+    font-size:3vw
+}
+.form-group{
+    font-family: geneva;
+    color: white;
+}
+.form-control{
+    width: 70%;
+}
+.hashi-link{
+    color: white;
+    position: relative;
+    font-family:  Geneva;
+    padding-left: 15px;
+}
+.hashi-link:hover{
+    color: #26408B;
+    position: relative;
+}
+.login{
+    border: solid thin #26408B;
+    color: white;
+    background-color: #26408B;
+    transition: all ease-in 300ms;
+
+    }
+    
+.login:hover{
+    color: #26408B;
+    border: solid thin #26408B;
+    background-color: white;
+    }

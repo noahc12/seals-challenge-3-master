@@ -1,0 +1,307 @@
+#la {
+    position: relative;
+    bottom: 45px;
+}
+
+hr {
+    color: white;
+}
+
+#login {
+    position: relative;
+    left: 500px;
+    font-family: optima;
+}
+
+#bg-color {
+    width: 100%;
+    overflow: hidden;
+    background: linear-gradient(to right, rgba(236, 227, 197, 0.5), rgba(38, 64, 139, 1));
+    /* display: grid; */
+}
+
+body {
+    background-color: #26408B;
+}
+
+#la {
+    position: relative;
+    bottom: 5px;
+    color: transparent;
+    width: 2000px
+}
+
+.caro {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    font-family: geneva;
+}
+
+.welcome-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999999;
+    width: 100%;
+    height: 100px;
+    background-color: #26408B;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    font-family: geneva;
+}
+
+.overlay {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999999;
+    width: 100%;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    text-align: center;
+    padding-top: 200px;
+    padding-left: 90px;
+    padding-right: 90px;
+    font-size: 15px;
+    font-family: geneva;
+}
+
+::ng-deep .carousel-inner {
+    width: 100%;
+    height: 100%;
+}
+
+::ng-deep .carousel-item {
+    width: 100%;
+    height: 100%;
+}
+
+::ng-deep .carousel-item:hover .overlay {
+    display: block;
+}
+
+#image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* for hover text */
+
+/* first pic */
+
+.container {
+    position: relative;
+    width: 15%;
+}
+
+/* #thirteen-container{} */
+
+/* class of show images */
+
+.show-images {
+    opacity: 1;
+    width: 80%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    /* box-shadow: 10px 10px 20px black; */
+}
+
+.thirteen {
+    position: relative;
+    width: 224px;
+    box-shadow: 10px 10px 20px black;
+}
+
+#intobls {
+    position: relative;
+    bottom: 221px;
+    left: -25px;
+    height: 220px;
+    width: 224px;
+    box-shadow: 10px 10px 20px black;
+}
+
+#legion {
+    position: relative;
+    bottom: 464px;
+    height: 220px;
+    width: 230px;
+    left: 500px;
+    box-shadow: 10px 10px 20px black;
+}
+
+#bache {
+    position: relative;
+    left: -500px;
+    bottom: 200px;
+    height: 220px;
+    width: 254px;
+    box-shadow: 10px 10px 20px black;
+}
+
+#dex {
+    position: relative;
+    height: 220px;
+    width: 524px;
+    left: -25px;
+    bottom: 445px;
+    box-shadow: 10px 10px 20px black;
+}
+
+#got1 {
+    position: relative;
+    height: 220px;
+    width: 224px;
+    bottom: 688px;
+    left: 500px;
+    box-shadow: 10px 10px 20px black;
+}
+
+#dd {
+    position: relative;
+    height: 220px;
+    width: 224px;
+    bottom: 420px;
+    left: -500px;
+    box-shadow: 10px 10px 20px black;
+}
+
+#hoc {
+    position: relative;
+    height: 220px;
+    width: 224px;
+    bottom: 658px;
+    left: -25px;
+    box-shadow: 10px 10px 20px black;
+}
+
+#strain {
+    position: relative;
+    box-shadow: 10px 10px 20px black;
+}
+
+.middle {
+    top: 0;
+    left: 0;
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+    padding: 15px 15px 35px 15px;
+    font-size: .9rem;
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    text-align: center;
+}
+
+#thirteenmiddle {
+    position: relative;
+}
+
+/* class of text when hovering */
+
+.text {
+    color: white;
+    position: relative;
+    padding-right: 80px;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* class of show titles */
+
+.item {
+    margin: 50px 0;
+    position: relative;
+}
+
+.show-titles {
+    font-family: geneva;
+    padding-left: 90px;
+    position: relative;
+    /* color: #26408B; */
+    color: white;
+    text-decoration-line: underline;
+}
+
+.thirteen-title {
+    position: relative;
+}
+
+#intobls-title {
+    position: relative;
+    bottom: 214px;
+    left: -10px;
+}
+
+#legion-title {
+    position: relative;
+    bottom: 454px;
+    left: 565px;
+}
+
+#bach-title {
+    position: relative;
+    left: -490px;
+    bottom: 195px;
+}
+
+#dex-title {
+    position: relative;
+    left: 35px;
+    bottom: 435px;
+}
+
+#got1-title {
+    position: relative;
+    bottom: 680px;
+    left: 520px;
+}
+
+#dd-title {
+    position: relative;
+    bottom: 420px;
+    left: -460px;
+}
+
+#hoc-title {
+    position: relative;
+    bottom: 658px;
+    left: 0px;
+}
+
+#strain-title {
+    position: relative;
+    bottom: 893px;
+    left: 545px;
+}
+
+.item:hover .image {
+    opacity: 0.2;
+    background-color: white;
+}
+
+.item:hover .middle {
+    opacity: 1 !important;
+}
+
+/* for slide */
+
+.slide {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

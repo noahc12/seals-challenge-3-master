@@ -1,0 +1,22 @@
+#background{
+    background: linear-gradient(to right, rgba(255, 220, 104, .5), rgba(38, 64, 139,1));
+    width:100vw;
+    min-height: 100vh;
+}
+#err{
+    font-size: 14px;
+    color: red;
+}
+
+#padding{
+    padding: 25px 75px;
+}
+
+.blog-link{
+    cursor: pointer;
+    color: dodgerblue;
+}
+
+.blog-link:hover{
+    color: black;
+}

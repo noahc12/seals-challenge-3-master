@@ -1,0 +1,282 @@
+<div class="caro">
+  <ngb-carousel>
+    <div class="container">
+      <ng-template ngbSlide class="slide">
+
+        <div class="overlay">
+          Barry Allen is a Central City police forensic scientist with a reasonably happy life, despite the childhood
+          trauma of a mysterious red and yellow lightning killing his mother and framing his father. ... With Barry's
+          new powers and team of scientists, he becomes "The Flash" and helps fight crime and protects Central City.
+        </div>
+        <!-- <div class="hover-image">
+          <img src="assests/black.png" (mouseover)="startpreview()" (mouseout)="changegif()">
+        </div> -->
+        <img id="image" [src]="images[0]" alt="Random first slide">
+      </ng-template>
+    </div>
+    <ng-template ngbSlide class="slide">
+      <!-- <div class="overlay">
+      </div> -->
+      <div class="overlay">
+        The series follows the misadventures of cynical mad scientist Rick Sanchez and his good-hearted but fretful
+        grandson Morty Smith, who split their time between domestic life and interdimensional adventures.
+      </div>
+      <img [src]="images[1]" alt="Random first slide">
+    </ng-template>
+    <ng-template ngbSlide class="slide">
+      <!-- <div class="overlay">
+      </div> -->
+      <div class="overlay">
+        Two brothers follow their father's footsteps as "hunters", fighting evil supernatural beings of many kinds,
+        including monsters, demons, and gods that roam the earth. ... These visions are somehow connected to the
+        demon who murdered his mother and its mysterious plans that seem to be all about Sam.
+      </div>
+      <img [src]="images[2]" alt="Random first slide">
+    </ng-template>
+    <ng-template ngbSlide class="slide">
+      <!-- <div class="overlay">
+      </div> -->
+      <div class="overlay">
+        The story behind Detective James Gordon's rise to prominence in Gotham City in the years before Batman's
+        arrival. ... All the while, young Bruce observes this war with a growing obsession that would one day drive
+        him to seek his own justice against the evil of Gotham as The Batman.
+      </div>
+      <img [src]="images[3]" alt="Random first slide">
+    </ng-template>
+    <ng-template ngbSlide class="slide">
+      <!-- <div class="overlay">
+      </div> -->
+      <div class="overlay">
+        Parks and Recreation focuses on Leslie Knope (Amy Poehler), the deputy director of the Parks and Recreation
+        Department in the fictional Indiana town of Pawnee. ... Leslie promises to turn the pit into a park, despite
+        resistance from the parks director Ron Swanson (Nick Offerman), an anti-government libertarian.
+      </div>
+      <img [src]="images[4]" alt="Random first slide">
+    </ng-template>
+    <ng-template ngbSlide class="slide">
+      <!-- <div class="overlay">
+      </div> -->
+      <div class="overlay">
+        A square yellow sponge named SpongeBob SquarePants lives in a pineapple with his pet snail, Gary, in the city
+        of Bikini Bottom on the floor of the Pacific Ocean. He works as a fry cook at the Krusty Krab. During his
+        time off, SpongeBob has a knack for attracting trouble with his starfish best friend, Patrick.
+      </div>
+      <img [src]="images[5]" alt="Random first slide">
+    </ng-template>
+  </ngb-carousel>
+</div>
+
+<!-- whats hot in tv -->
+<div id="bg-color">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 col-md-4 col-lg-4 item">
+        <div class="show-images">
+          <img src="assets/shows/13.jpg" alt="" class="image thirteen" style="width:100%">
+        </div>
+        <div class="middle" id="thirteen-middle" (click)="router.navigate(['/search/:id']);">
+          <div class="text">Newcomer Katherine Langford plays the role of Hannah, a young woman who takes her own life.
+            Two weeks after her tragic death, a classmate named Clay finds a mysterious box on his porch. Inside the
+            box are recordings made by Hannah -- on whom Clay had a crush -- in which she explains the 13 reasons why
+            she chose to commit suicide.
+
+          </div>
+        </div>
+        <a class="show-titles thirteen-title" routerLink="/search/:id">13 Reasons Why</a>
+      </div>
+
+      <div class="col-12 col-md-4 col-lg-4 item">
+        <div class="show-images">
+          <img src="assets/shows/IBLS.jpg" alt="" class="image thirteen" style="width:100%">
+        </div>
+        <div class="middle" (click)="router.navigate(['/search/:id']);">
+          <div class="text"> Left in the hands of creators Alfred Gough and Miles Millar ("Shanghai Noon,"
+            "Smallville"), the series stars Daniel Wu as ruthless, prodigiously skilled warrior Sunny, who mentors
+            teenage boy M.K. during a spiritual journey across a feudal civilization known as the Badlands.
+          </div>
+        </div>
+        <a class="show-titles thirteen-title" routerLink="/search/:id">Into the Badlands</a>
+      </div>
+
+      <!-- legion -->
+      <div class="col-12 col-md-4 col-lg-4 item">
+        <div class="show-images">
+          <img src="assets/shows/legion.jpg" alt="" class="image thirteen" style="width:100%">
+        </div>
+        <div class="middle" (click)="router.navigate(['/search/:id']);">
+          <div class="text">David Haller is a troubled young man who was diagnosed with schizophrenia as a child.
+            Shuffled from one psychiatric institution to the next, in his early 30s, David met and fell in love with a
+            beautiful and troubled fellow patient named Syd. After a startling encounter with her, he was forced to
+            confront the shocking possibility that the voices he hears and the visions he sees may actually be real.
+          </div>
+        </div>
+        <a class="show-titles thirteen-title" routerLink="/search/:id">Legion</a>
+      </div>
+      <!-- bachelorette -->
+      <div class="col-12 col-md-4 col-lg-4 item">
+        <div class="show-images">
+          <img src="assets/shows/bach.jpg" alt="" class="image thirteen" style="width:100%">
+        </div>
+        <div class="middle" (click)="router.navigate(['/search/:id']);">
+          <div class="text">When the 27-year-old publicist isn't making a splash at the boutique public relations
+            agency where she works or planning her next overseas trip, she can be found at home hosting dinner parties
+            for her friends. She hopes to find a man who shares her firm set of Midwest values and who is actually
+            ready to commit to her on her terms.
+          </div>
+        </div>
+        <a class="show-titles thirteen-title" routerLink="/search/:id">The Bachelorette</a>
+      </div>
+      <!-- daredevil -->
+      <div class="col-12 col-md-4 col-lg-4 item">
+        <div class="show-images">
+          <img src="assets/shows/daredevil.jpg" alt="" class="image thirteen" style="width:100%">
+        </div>
+        <div class="middle" (click)="router.navigate(['/search/:id']);">
+          <div class="text">"Daredevil" follows Matt Murdock, attorney by day and vigilante by night. Blinded in an
+            accident as a child, Murdock uses his heightened senses as Daredevil to fight crime on the streets of New
+            York after the sun goes down. </div>
+        </div>
+        <a class="show-titles thirteen-title" routerLink="/search/:id">Daredevil</a>
+      </div>
+      <div class="col-12 col-md-4 col-lg-4 item">
+        <div class="show-images">
+          <img src="assets/shows/got1.jpg" alt="" class="image thirteen" style="width:100%">
+        </div>
+        <div class="middle" (click)="router.navigate(['/search/:id']);">
+          <div class="text">George R.R. Martin's best-selling book series `A Song of Ice and Fire' is brought to the
+            screen as HBO sinks its considerable storytelling teeth into the medieval fantasy epic. It's the depiction
+            of two powerful families - kings and queens, knights and renegades, liars and honest men - playing a deadly
+            game for control of the Seven Kingdoms of Westeros, and to sit atop the Iron Throne.</div>
+        </div>
+        <a class="show-titles thirteen-title" routerLink="/search/:id">Game of Thrones</a>
+      </div>
+      <div class="col-12 col-md-4 col-lg-4 item">
+        <div class="show-images">
+          <img src="assets/shows/dex.jpg" alt="" class="image thirteen" style="width:100%">
+        </div>
+        <div class="middle" (click)="router.navigate(['/search/:id']);">
+          <div class="text">Dexter Morgan is a Miami-based blood splatter expert who doesn't just solve murders; he
+            commits them too. In fact, he's a serial killer - but he only murders the guilty, so he feels justified
+            with his lifestyle choices.</div>
+        </div>
+        <a class="show-titles thirteen-title" routerLink="/search/:id">Dexter</a>
+      </div>
+      <!-- daredevil -->
+      <div class="col-12 col-md-4 col-lg-4 item">
+        <div class="show-images">
+          <img src="assets/shows/hoc.jpg" alt="" class="image thirteen" style="width:100%">
+        </div>
+        <div class="middle" (click)="router.navigate(['/search/:id']);">
+          <div class="text">U.S. Rep. Francis Underwood of South Carolina starts out as a ruthless politician seeking
+            revenge in this Netflix original production. Promised the post of Secretary of State in exchange for his
+            support, his efforts help to ensure the election of Garrett Walker to the presidency. But Walker changes
+            his mind before the inauguration, telling Underwood he's too valuable in Congress. </div>
+        </div>
+        <a class="show-titles thirteen-title" routerLink="/search/:id">House of Cards</a>
+      </div>
+      <div class="col-12 col-md-4 col-lg-4 item">
+        <div class="show-images">
+          <img src="assets/shows/strain.jpg" alt="" class="image thirteen" style="width:100%">
+        </div>
+        <div class="middle" (click)="router.navigate(['/search/:id']);">
+          <div class="text">Dr. Ephraim Goodweather, the head of the CDC's New York-based Canary Project, is called
+            upon to investigate when an airplane lands with everybody on board dead. What his team discovers is a viral
+            outbreak that has similarities to an ancient strain of vampirism. As the virus begins to spread,
+            Goodweather works with his team and a group of the city's residents to wage a war that could hold
+            humanity's fate in its hand. </div>
+        </div>
+        <a class="show-titles thirteen-title" routerLink="/search/:id">The Strain</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+<!-- <div class="container" id="thirteen-container">
+    <div class="show-images">
+      <img src="assets/shows/13.jpg" alt="" class="image" id="thirteen" style="width:100%" (click)="navigate(item.id)">
+    </div>
+    <div class="middle" id="thirteen-middle">
+      <div class="text" id="first-text">All might</div>
+    </div>
+    <a class="show-titles" id="thirteen-title" routerLink="/search/:id">13 Reasons Why</a>
+  </div>
+  <div class="container">
+    <div class="show-images">
+      <img src="assets/shows/IBLS.jpg" alt="" class="image" id="intobls" style="width:100%">
+    </div>
+    <div class="middle">
+      <div class="text" id="second-text">All might</div>
+    </div>
+    <a class="show-titles" id="intobls-title" routerLink="/search/:id">Into the Badlands</a>
+  </div>
+  <div class="container">
+    <div class="show-images">
+      <img src="assets/shows/legion.jpg" alt="" class="image" id="legion" style="width:100%">
+    </div>
+    <div class="middle">
+      <div class="text" id="third-text">All might</div>
+    </div>
+    <a class="show-titles" id="legion-title" routerLink="/search/:id">Legion</a>
+  </div>
+  <div class="container">
+    <div class="show-images">
+      <img src="assets/shows/bach.jpg" alt="" class="image" id="bache" style="width:100%">
+    </div>
+    <div class="middle">
+      <div class="text" id="fourth-text">All might</div>
+    </div>
+    <a class="show-titles" id="bach-title" routerLink="/search/:id">The Bachelorette</a>
+  </div>
+  <div class="container">
+    <div class="show-images">
+      <img src="assets/shows/dex.jpg" alt="" class="image" id="dex" style="width:100%">
+    </div>
+    <div class="middle">
+      <div class="text" id="fifth-text">All might</div>
+    </div>
+    <a class="show-titles" id="dex-title" routerLink="/search/:id">Dexter</a>
+  </div>
+  <div class="container">
+    <div class="show-images">
+      <img src="assets/shows/got1.jpg" alt="" class="image" id="got1" style="width:100%">
+    </div>
+    <div class="middle">
+      <div class="text" id="sixth-text">All might</div>
+    </div>
+    <a class="show-titles" id="got1-title" routerLink="/search/:id">Game of Thrones</a>
+  </div>
+  <div class="container">
+    <div class="show-images">
+      <img src="assets/shows/daredevil.jpg" alt="" class="image" id="dd" style="width:100%">
+    </div>
+    <div class="middle">
+      <div class="text" id="seventh-text">All might</div>
+    </div>
+    <a class="show-titles" id="dd-title" routerLink="/search/:id">Daredevil</a>
+  </div>
+  <div class="container">
+    <div class="show-images">
+      <img src="assets/shows/hoc.jpg" alt="" class="image" id="hoc" style="width:100%">
+      <div class="middle">
+        <div class="text" id="eigth-text">All might</div>
+      </div>
+      <a class="show-titles" id="hoc-title" routerLink="/search/:id">House of Cards</a>
+    </div>
+    <div class="container">
+      <div class="show-images">
+        <img src="assets/shows/strain.jpg" alt="" class="image" id="strain" style="width:100%">
+      </div>
+      <div class="middle">
+        <div class="text" id="ninth-text">All might</div>
+      </div>
+      <a class="show-titles" id="strain-title" routerLink="/search/:id">The Strain</a>
+    </div> -->
+<!-- </div> -->

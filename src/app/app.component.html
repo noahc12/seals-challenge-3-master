@@ -1,0 +1,60 @@
+<nav class="navbar navbar-expand-lg center">
+  <a class="navbar-brand" href="#">
+    <img id="logo" src="assets/hashi3.png" alt="">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="hashi-link" id="home" routerLink="/home">Home</a>
+      </li>
+      <li class="nav-item active">
+        <a class="hashi-link" id="categories" routerLink="/categories">Genres</a>
+      </li>
+      <!-- <li class="nav-item active">
+          <a class="hashi-link" id="login" routerLink="/login">Login</a>
+        </li>
+    <li class="nav-item active">
+        <a class="hashi-link" id="logged-in" routerLink="/logged-in">
+            <img  id="user" src="assets/logged-in.png">
+          </a>
+    </li>
+    <li class="nav-item active">
+        <a class="hashi-link" id="account" routerLink="/account">Account</a>
+      </li> -->
+  </ul>
+    <input type="text" id="tv-search" placeholder="Search Tv-Show">
+    <a class="btn custom" id= "search-btn" routerLink="/results">Search</a>
+    <!-- <form ng-submit="submit()" ng-controller="ExampleController">
+      Enter text and hit enter:
+      <input type="text" ng-model="text" name="text" />
+      <input type="submit" id="submit" value="Submit" />
+      <pre>list={{list}}</pre>
+    </form> -->
+    <!-- <script>
+      angular.module('submitExample', [])
+        .controller('ExampleController', ['$scope', function($scope) {
+          $scope.list = [];
+          $scope.text = 'hello';
+          $scope.submit = function() {
+            if ($scope.text) {
+              $scope.list.push(this.text);
+              $scope.text = '';
+            }
+          };
+        }]);
+    </script> -->
+
+    <form class="form-inline">
+      <div class="input-group">
+        <div class="input-group-prepend">
+        </div>
+      </div>
+    </form>
+  </div>
+</nav>
+<router-outlet></router-outlet>

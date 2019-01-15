@@ -1,0 +1,5 @@
+.background-color{
+    background-image: linear-gradient(to right, rgba(255, 129, 71, 0.5), rgba(38, 64, 139,1));
+    width:100vw;
+    min-height: 100vh;
+}
